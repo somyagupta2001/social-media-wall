@@ -53,10 +53,18 @@
 		'fields' => 'id,caption,children{media_type,media_url},comments_count,like_count,media_type,media_url,permalink',
 		'access_token' => $accessToken
 	);
-	$hashtagTopMedia = makeApiCall( $hashtagTopMediaEndpoint, 'GET', $hashtagTopMediaParams );
+	//$hashtagTopMedia = makeApiCall( $hashtagTopMediaEndpoint, 'GET', $hashtagTopMediaParams );
+
+    $hashtagRecentEndpoint = ENDPOINT_BASE . $hashtagId . '/recent_media';
+	$hashtagRecentParams = array(
+		'user_id' => $instagramAccountId,
+		'fields' => 'id,caption,children{media_type,media_url},comments_count,like_count,media_type,media_url,permalink',
+		'access_token' => $accessToken
+	);
+	$hashtagPosts = makeApiCall( $hashtagRecentEndpoint, 'GET', $hashtagRecentParams );
 
     // echo '<pre>';
-    // print_r($hashtagTopMedia);
+    // print_r($hashtagPosts);
 
     
 
@@ -106,7 +114,7 @@
 <body>
     <h1>Top Media for #<?php echo $hashtag ?></h1> 
     <div style='display: flex; flex-direction: row; flex-wrap: wrap;'>
-        <?php array_map('displayPost',$hashtagTopMedia['data']) ?>
+        <?php array_map('displayPost',$hashtagPosts['data']) ?>
     </div>
 </body>
 </html>
