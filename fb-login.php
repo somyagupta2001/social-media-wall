@@ -23,6 +23,7 @@
         } catch (Facebook\Exceptions\FacebookSDKException $e) { //graph error
             echo 'Facebook SDK returned an error ' . $e->getMessage();
         }
+        var_dump("accestoken",$accessToken);
 
         if(!$accessToken->isLongLived()) {
             try{

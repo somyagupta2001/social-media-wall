@@ -6,7 +6,7 @@
     define('FACEBOOK_REDIRECT_URI','http://localhost:3000/fb-login.php');
     define('ENDPOINT_BASE', 'https://graph.facebook.com/v5.0/');
 
-    $accessToken = 'EAAIhSzq0cKwBANVybLQJquwbEKj6xNqwe0ELwdEf4mgipiAf7uhtC7zpfyP4TR7uHDHR6p4yNqWZBPkXd3Q5ZCk9AMLXQNFm0exhiT1KMaVZCtSUHNgpIqP3axnx4pEzUZBQKuN1GwtutTX8EOkToPNKZCznWB7fZBPhp4d2b8v4nS7ERxTLgyFhidWGN0jIk0Ns65AbW5zWD5y0tWTpihzXEBgoOKbt0akdB4rjVKb7PVZAZBakrsrK';
+    $accessToken = 'EAAIhSzq0cKwBACx3dLhJzrHbfJ2X7nvuMMfWVWzsVNjEDwJgup3pauKNhPIVnlI9cPB7NbgqfeGoZCm1D8gziZCMZAh68covuY52jiczaAr44bA7oDsbFNK27lbV6qkyh27hBBOh6o20Ku94IXnbV8Ez9qyrs0siuAArQo8fNjttfo3TrjzBipww4V62w7NrTDdWgpGAt9JJJNkHOal1wdp4utECIZCyshPu8M4JnzOSfjdspxPk';
 
     $pageId = '101323832415215';
 
